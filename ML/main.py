@@ -43,6 +43,7 @@ model.fit(x_train, y_train, epochs = epochs, batch_size = 32)
 model.save('TestModel.keras')
 
 # After Trained the model and save it, we can just load the model without retraining it
+# Make sure that first train the model, and then comment out those lines of code that setup the model
 # model = tf.keras.models.load_model('TestModel.keras')
 
 # Check the loss and accuarcy of the model
